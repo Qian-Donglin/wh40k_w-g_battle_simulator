@@ -1,0 +1,53 @@
+{
+    "weapons": [
+        {
+            "type": "Melee",
+            "weaponName": "Combat Knife",
+            "baseDamage": 3,
+            "extraDamageDice": 1,
+            "AP": 0,
+            "meleeRange": 1,
+            "range": 0,
+            "salvo": 0,
+            "armo": 0,
+            "traits": []
+        },
+        {
+            "type": "Melee",
+            "weaponName": "Chainsword",
+            "baseDamage": 4,
+            "extraDamageDice": 1,
+            "AP": 0,
+            "meleeRange": 1,
+            "range": 0,
+            "salvo": 0,
+            "armo": 0,
+            "traits": [
+                {
+                    "trait": "Brutal",
+                    "rating": 0,
+                    "statusEffectName": ""
+                }
+            ]
+        },
+        {
+            "type": "Melee",
+            "weaponName": "Power Sword",
+            "baseDamage": 4,
+            "extraDamageDice": 1,
+            "AP": 3,
+            "meleeRange": 1,
+            "range": 0,
+            "salvo": 0,
+            "armo": 0,
+            "traits": [
+                {
+                    "trait": "Parry",
+                    "rating": 0,
+                    "statusEffectName": ""
+                }
+            ]
+        }
+    ],
+    "ammo": []
+}

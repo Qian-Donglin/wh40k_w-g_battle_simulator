@@ -1,0 +1,55 @@
+{
+  "ammo": [
+    {
+      "ammoName": "Standard Las Cell",
+      "baseDamage": 0,
+      "extraDamageDice": 0,
+      "AP": 0,
+      "uses": 0,
+      "traits": [
+        { "trait": "Assault",  "rating": 0, "statusEffectName": "" },
+        { "trait": "Reliable", "rating": 0, "statusEffectName": "" }
+      ]
+    },
+    {
+      "ammoName": "Standard Bolt Round",
+      "baseDamage": 0,
+      "extraDamageDice": 0,
+      "AP": 0,
+      "uses": 0,
+      "traits": [
+        { "trait": "Assault",   "rating": 0, "statusEffectName": "" },
+        { "trait": "RapidFire", "rating": 1, "statusEffectName": "" }
+      ]
+    },
+    {
+      "ammoName": "Kraken Bolt Round",
+      "baseDamage": 0,
+      "extraDamageDice": 0,
+      "AP": 2,
+      "uses": 0,
+      "traits": [
+        { "trait": "Assault",  "rating": 0, "statusEffectName": "" },
+        { "trait": "Piercing", "rating": 2, "statusEffectName": "" }
+      ]
+    },
+    {
+      "ammoName": "Frag Grenade",
+      "baseDamage": 0,
+      "extraDamageDice": 3,
+      "AP": 0,
+      "uses": 1,
+      "traits": [
+        { "trait": "Blast", "rating": 3, "statusEffectName": "" }
+      ]
+    },
+    {
+      "ammoName": "Krak Grenade",
+      "baseDamage": 0,
+      "extraDamageDice": 3,
+      "AP": 4,
+      "uses": 1,
+      "traits": []
+    }
+  ]
+}

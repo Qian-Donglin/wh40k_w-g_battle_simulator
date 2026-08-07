@@ -1,0 +1,159 @@
+{
+  "weapons": [
+    {
+      "type": "Melee",
+      "weaponName": "Combat Knife",
+      "baseDamage": 3,
+      "extraDamageDice": 1,
+      "AP": 0,
+      "meleeRange": 1,
+      "range": 0,
+      "salvo": 0,
+      "armo": 0,
+      "traits": []
+    },
+    {
+      "type": "Melee",
+      "weaponName": "Chainsword",
+      "baseDamage": 4,
+      "extraDamageDice": 1,
+      "AP": 0,
+      "meleeRange": 1,
+      "range": 0,
+      "salvo": 0,
+      "armo": 0,
+      "traits": [
+        { "trait": "Brutal", "rating": 0, "statusEffectName": "" }
+      ]
+    },
+    {
+      "type": "Melee",
+      "weaponName": "Power Sword",
+      "baseDamage": 4,
+      "extraDamageDice": 1,
+      "AP": 3,
+      "meleeRange": 1,
+      "range": 0,
+      "salvo": 0,
+      "armo": 0,
+      "traits": [
+        { "trait": "Parry", "rating": 0, "statusEffectName": "" }
+      ]
+    },
+    {
+      "type": "Ranged",
+      "weaponName": "Bolt Pistol",
+      "baseDamage": 9,
+      "extraDamageDice": 1,
+      "AP": 0,
+      "meleeRange": 0,
+      "range": 8,
+      "salvo": 1,
+      "armo": 8,
+      "traits": [
+        { "trait": "Pistol", "rating": 0, "statusEffectName": "" }
+      ]
+    },
+    {
+      "type": "Ranged",
+      "weaponName": "Las Pistol",
+      "baseDamage": 9,
+      "extraDamageDice": 1,
+      "AP": 0,
+      "meleeRange": 0,
+      "range": 15,
+      "salvo": 1,
+      "armo": 15,
+      "traits": []
+    },
+    {
+      "type": "Ranged",
+      "weaponName": "Lasgun",
+      "baseDamage": 9,
+      "extraDamageDice": 1,
+      "AP": 0,
+      "meleeRange": 0,
+      "range": 24,
+      "salvo": 1,
+      "armo": 30,
+      "traits": []
+    },
+    {
+      "type": "Ranged",
+      "weaponName": "Bolter",
+      "baseDamage": 9,
+      "extraDamageDice": 1,
+      "AP": 0,
+      "meleeRange": 0,
+      "range": 24,
+      "salvo": 1,
+      "armo": 20,
+      "traits": []
+    },
+    {
+      "type": "Ranged",
+      "weaponName": "Heavy Bolter",
+      "baseDamage": 10,
+      "extraDamageDice": 2,
+      "AP": 1,
+      "meleeRange": 0,
+      "range": 36,
+      "salvo": 3,
+      "armo": 60,
+      "traits": []
+    }
+  ],
+  "ammo": [
+    {
+      "ammoName": "Standard Las Cell",
+      "baseDamage": 0,
+      "extraDamageDice": 0,
+      "AP": 0,
+      "uses": 0,
+      "traits": [
+        { "trait": "Assault",  "rating": 0, "statusEffectName": "" },
+        { "trait": "Reliable", "rating": 0, "statusEffectName": "" }
+      ]
+    },
+    {
+      "ammoName": "Standard Bolt Round",
+      "baseDamage": 0,
+      "extraDamageDice": 0,
+      "AP": 0,
+      "uses": 0,
+      "traits": [
+        { "trait": "Assault",   "rating": 0, "statusEffectName": "" },
+        { "trait": "RapidFire", "rating": 1, "statusEffectName": "" }
+      ]
+    },
+    {
+      "ammoName": "Kraken Bolt Round",
+      "baseDamage": 0,
+      "extraDamageDice": 0,
+      "AP": 2,
+      "uses": 0,
+      "traits": [
+        { "trait": "Assault",  "rating": 0, "statusEffectName": "" },
+        { "trait": "Piercing", "rating": 2, "statusEffectName": "" }
+      ]
+    },
+    {
+      "ammoName": "Frag Grenade",
+      "baseDamage": 0,
+      "extraDamageDice": 3,
+      "AP": 0,
+      "uses": 1,
+      "traits": [
+        { "trait": "Blast", "rating": 3, "statusEffectName": "" }
+      ]
+    },
+    {
+      "ammoName": "Krak Grenade",
+      "baseDamage": 0,
+      "extraDamageDice": 3,
+      "AP": 4,
+      "uses": 1,
+      "traits": []
+    }
+  ]
+}

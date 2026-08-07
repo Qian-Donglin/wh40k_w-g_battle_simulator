@@ -1,0 +1,66 @@
+{
+  "weapons": [
+    {
+      "type": "Ranged",
+      "weaponName": "Bolt Pistol",
+      "baseDamage": 9,
+      "extraDamageDice": 1,
+      "AP": 0,
+      "meleeRange": 0,
+      "range": 8,
+      "salvo": 1,
+      "armo": 8,
+      "traits": [
+        { "trait": "Pistol", "rating": 0, "statusEffectName": "" }
+      ]
+    },
+    {
+      "type": "Ranged",
+      "weaponName": "Las Pistol",
+      "baseDamage": 9,
+      "extraDamageDice": 1,
+      "AP": 0,
+      "meleeRange": 0,
+      "range": 15,
+      "salvo": 1,
+      "armo": 15,
+      "traits": []
+    },
+    {
+      "type": "Ranged",
+      "weaponName": "Lasgun",
+      "baseDamage": 9,
+      "extraDamageDice": 1,
+      "AP": 0,
+      "meleeRange": 0,
+      "range": 24,
+      "salvo": 1,
+      "armo": 30,
+      "traits": []
+    },
+    {
+      "type": "Ranged",
+      "weaponName": "Bolter",
+      "baseDamage": 9,
+      "extraDamageDice": 1,
+      "AP": 0,
+      "meleeRange": 0,
+      "range": 24,
+      "salvo": 1,
+      "armo": 20,
+      "traits": []
+    },
+    {
+      "type": "Ranged",
+      "weaponName": "Heavy Bolter",
+      "baseDamage": 10,
+      "extraDamageDice": 2,
+      "AP": 1,
+      "meleeRange": 0,
+      "range": 36,
+      "salvo": 3,
+      "armo": 60,
+      "traits": []
+    }
+  ]
+}
