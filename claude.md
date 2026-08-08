@@ -5,15 +5,19 @@
 # ゲームの設計
 
 1. まず各キャラクターについてが1ターンの間にそれぞれの決まった優先度で動くターン制である。
-2. 各キャラクターには、属性というのがある。属性は別途`character.md`に記載している。
+2. 各キャラクターには、属性というのがある。属性は別途`docs/character/character_status_skill.md`に記載している。
 3. 各キャラクターは自分のターンになると移動や攻撃ができ、HPが0になると取り除かれる。
 4. 以上のものは通常モードであり、マスターモードと相互で切り替えることもできる。マスターモードではキャラクターを増加、減少させたり、キャラクターのステータスをそれぞれ変更させたりすることができる。
 
 # マテリアル
 
 **ここに記述していないファイルについては、まず何もコード生成しないこと。**
-- キャラクターの持つパラメタは`docs/character.md`にある。
-- キャラクターが持つ武器は`docs/weapon.md`にある。
-- キャラクターの持つ防具は`docs/armour.md`にある。
+- キャラクターの持つパラメタは`docs/character/character_status_skill.md`にある。
+- キャラクターが持つ武器は`docs/equipments/weapon.md`にある。
+- キャラクターの持つ防具は`docs/equipments/armour.md`にある。
 - シミュレータ本体の設計は`docs/simulator_app_design.md`
+- システム全体の設計・オリジナルルール・未決定事項は`docs/system_design.md`
+- W&G公式ルールの和訳は`docs/rules/`配下（`core_rules_ja.md`＝判定、`battle_rules_ja.md`＝戦闘、`weapons_ja.md`＝武器一覧）
+
+> `docs/old_rules/`は再編前のアーカイブ。**参照・編集しないこと**（正は上記のパス）。
 
