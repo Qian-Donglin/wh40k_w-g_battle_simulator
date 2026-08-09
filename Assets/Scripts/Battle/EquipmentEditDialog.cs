@@ -33,7 +33,7 @@ public class EquipmentEditDialog : MonoBehaviour
     private InputField _fAP;
     private InputField _fTraits;
     private InputField _fMeleeRange;
-    private InputField _fRange, _fSalvo, _fMagazine, _fArmo;
+    private InputField _fRange, _fSalvo, _fMagazine;
     private InputField _fUses;
     private InputField _fArmourRating;
 
@@ -153,7 +153,6 @@ public class EquipmentEditDialog : MonoBehaviour
                 _fRange    = AddCompactField(row1, "Range", "0", flexW: 0f, prefW: 65f);
                 _fSalvo    = AddCompactField(row1, "Salvo", "0", flexW: 0f, prefW: 60f);
                 _fMagazine = AddCompactField(row1, "Mag",   "0", flexW: 0f, prefW: 60f);
-                _fArmo     = AddCompactField(row1, "Armo",  "∞", flexW: 0f, prefW: 60f);
             }
 
             if (_kind == EquipmentKind.Ammo)
@@ -192,7 +191,6 @@ public class EquipmentEditDialog : MonoBehaviour
                 _fRange.text    = d.range.ToString();
                 _fSalvo.text    = d.salvo.ToString();
                 _fMagazine.text = d.magazine.ToString();
-                _fArmo.text     = ArmoToString(d.armo);
                 _fTraits.text  = TraitsToString(d.traits);
                 break;
             }
@@ -320,7 +318,6 @@ public class EquipmentEditDialog : MonoBehaviour
         d.range           = ParseInt(_fRange);
         d.salvo           = ParseInt(_fSalvo);
         d.magazine        = ParseInt(_fMagazine);
-        d.armo            = ParseArmo(_fArmo.text);
         d.weaponType      = WeaponType.Ranged;
         d.traits          = ParseTraits(_fTraits.text);
         var list = WeaponDatabase.GetWeaponsByType<RangedWeaponData>().ToList();
@@ -575,15 +572,5 @@ public class EquipmentEditDialog : MonoBehaviour
 
     private static int ParseInt(InputField f) =>
         (f != null && int.TryParse(f.text, out int v)) ? v : 0;
-
-    /// <summary>所持弾薬（Armo）の文字列表現。-1 は無制限として "∞" にする。</summary>
-    private static string ArmoToString(int armo) => armo < 0 ? "∞" : armo.ToString();
-
-    /// <summary>所持弾薬（Armo）の入力欄をパースする。"∞" や空欄、負の値は無制限（-1）として扱う。</summary>
-    private static int ParseArmo(string text)
-    {
-        if (string.IsNullOrWhiteSpace(text) || text.Trim() == "∞") return -1;
-        return int.TryParse(text.Trim(), out int v) ? v : -1;
-    }
 
 }

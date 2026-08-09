@@ -10,7 +10,6 @@
       "range": 8,
       "salvo": 1,
       "magazine": 8,
-      "armo": -1,
       "traits": [
         { "trait": "Pistol", "rating": 0, "statusEffectName": "" }
       ]
@@ -25,7 +24,6 @@
       "range": 15,
       "salvo": 1,
       "magazine": 15,
-      "armo": -1,
       "traits": []
     },
     {
@@ -38,7 +36,6 @@
       "range": 24,
       "salvo": 1,
       "magazine": 30,
-      "armo": -1,
       "traits": []
     },
     {
@@ -51,7 +48,6 @@
       "range": 24,
       "salvo": 1,
       "magazine": 20,
-      "armo": -1,
       "traits": []
     },
     {
@@ -64,7 +60,6 @@
       "range": 36,
       "salvo": 3,
       "magazine": 60,
-      "armo": -1,
       "traits": []
     }
   ]

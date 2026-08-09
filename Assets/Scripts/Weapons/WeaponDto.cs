@@ -38,9 +38,6 @@ public class WeaponDto
     /// <summary>Ranged のみ使用。リロードするまでに攻撃できる回数。</summary>
     public int magazine;
 
-    /// <summary>Ranged のみ使用。所持している弾薬数。-1 は無制限。</summary>
-    public int armo;
-
     public List<TraitEntryDto> traits = new List<TraitEntryDto>();
 }
 

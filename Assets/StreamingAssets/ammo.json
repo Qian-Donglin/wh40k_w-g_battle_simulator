@@ -27,7 +27,7 @@
       "baseDamage": 0,
       "extraDamageDice": 0,
       "AP": 2,
-      "uses": 0,
+      "uses": 5,
       "traits": [
         { "trait": "Assault",  "rating": 0, "statusEffectName": "" },
         { "trait": "Piercing", "rating": 2, "statusEffectName": "" }

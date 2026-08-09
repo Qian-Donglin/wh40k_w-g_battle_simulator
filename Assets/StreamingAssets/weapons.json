@@ -9,7 +9,6 @@
       "meleeRange": 1,
       "range": 0,
       "salvo": 0,
-      "armo": 0,
       "traits": []
     },
     {
@@ -21,7 +20,6 @@
       "meleeRange": 1,
       "range": 0,
       "salvo": 0,
-      "armo": 0,
       "traits": [
         { "trait": "Brutal", "rating": 0, "statusEffectName": "" }
       ]
@@ -35,7 +33,6 @@
       "meleeRange": 1,
       "range": 0,
       "salvo": 0,
-      "armo": 0,
       "traits": [
         { "trait": "Parry", "rating": 0, "statusEffectName": "" }
       ]
@@ -50,7 +47,6 @@
       "range": 8,
       "salvo": 1,
       "magazine": 8,
-      "armo": -1,
       "traits": [
         { "trait": "Pistol", "rating": 0, "statusEffectName": "" }
       ]
@@ -65,7 +61,6 @@
       "range": 15,
       "salvo": 1,
       "magazine": 15,
-      "armo": -1,
       "traits": []
     },
     {
@@ -78,7 +73,6 @@
       "range": 24,
       "salvo": 1,
       "magazine": 30,
-      "armo": -1,
       "traits": []
     },
     {
@@ -91,7 +85,6 @@
       "range": 24,
       "salvo": 1,
       "magazine": 20,
-      "armo": -1,
       "traits": []
     },
     {
@@ -104,7 +97,6 @@
       "range": 36,
       "salvo": 3,
       "magazine": 60,
-      "armo": -1,
       "traits": []
     }
   ],
@@ -136,7 +128,7 @@
       "baseDamage": 0,
       "extraDamageDice": 0,
       "AP": 2,
-      "uses": 0,
+      "uses": 5,
       "traits": [
         { "trait": "Assault",  "rating": 0, "statusEffectName": "" },
         { "trait": "Piercing", "rating": 2, "statusEffectName": "" }

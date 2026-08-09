@@ -21,10 +21,6 @@ public class BattleCharacter
     private readonly Dictionary<RangedWeaponData, int> _currentAmmo
         = new Dictionary<RangedWeaponData, int>();
 
-    // 所持している弾薬の残数（上限は weapon.armo。-1 は無制限）
-    private readonly Dictionary<RangedWeaponData, int> _reserveAmmo
-        = new Dictionary<RangedWeaponData, int>();
-
     public BattleCharacter(NpcData data, Vector2 position)
     {
         Data          = data;
@@ -35,10 +31,7 @@ public class BattleCharacter
         foreach (var w in data.weapons)
         {
             if (w is RangedWeaponData r)
-            {
                 _currentAmmo[r] = r.magazine;
-                _reserveAmmo[r] = r.armo;
-            }
         }
     }
 
@@ -46,41 +39,16 @@ public class BattleCharacter
     public int GetCurrentAmmo(RangedWeaponData weapon) =>
         _currentAmmo.TryGetValue(weapon, out var v) ? v : 0;
 
-    /// <summary>所持している弾薬の残数。-1 は無制限。</summary>
-    public int GetReserveAmmo(RangedWeaponData weapon) =>
-        _reserveAmmo.TryGetValue(weapon, out var v) ? v : 0;
-
     public void ConsumeAmmo(RangedWeaponData weapon, int amount)
     {
         if (_currentAmmo.ContainsKey(weapon))
             _currentAmmo[weapon] = Mathf.Max(0, _currentAmmo[weapon] - amount);
     }
 
-    /// <summary>
-    /// 所持弾薬（Armo）から弾倉（Magazine）へ補充する。
-    /// 所持弾薬が無制限（-1）なら常に満タンまで補充して true を返す。
-    /// 所持弾薬が 0 の場合は補充できず false を返す。
-    /// 所持弾薬が満タン分より少ない場合は、補充できた分だけ入れて false を返す（弾倉は満タンにならない）。
-    /// </summary>
-    public bool ReloadAmmo(RangedWeaponData weapon)
+    public void ReloadAmmo(RangedWeaponData weapon)
     {
-        if (!_currentAmmo.ContainsKey(weapon)) return false;
-
-        int needed = weapon.magazine - _currentAmmo[weapon];
-        if (needed <= 0) return true;
-
-        int reserve = GetReserveAmmo(weapon);
-        if (reserve < 0) // 無制限
-        {
+        if (_currentAmmo.ContainsKey(weapon))
             _currentAmmo[weapon] = weapon.magazine;
-            return true;
-        }
-        if (reserve <= 0) return false;
-
-        int used = Mathf.Min(needed, reserve);
-        _currentAmmo[weapon] += used;
-        _reserveAmmo[weapon]  = reserve - used;
-        return used == needed;
     }
 
     // --- HP / Shock ---

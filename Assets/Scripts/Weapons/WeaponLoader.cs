@@ -131,7 +131,6 @@ public static class WeaponLoader
                 ranged.range    = dto.range;
                 ranged.salvo    = dto.salvo;
                 ranged.magazine = dto.magazine;
-                ranged.armo     = dto.armo;
                 weapon = ranged;
                 break;
 

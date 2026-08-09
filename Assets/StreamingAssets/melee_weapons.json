@@ -9,7 +9,6 @@
             "meleeRange": 1,
             "range": 0,
             "salvo": 0,
-            "armo": 0,
             "traits": []
         },
         {
@@ -21,7 +20,6 @@
             "meleeRange": 1,
             "range": 0,
             "salvo": 0,
-            "armo": 0,
             "traits": [
                 {
                     "trait": "Brutal",
@@ -39,7 +37,6 @@
             "meleeRange": 1,
             "range": 0,
             "salvo": 0,
-            "armo": 0,
             "traits": [
                 {
                     "trait": "Parry",

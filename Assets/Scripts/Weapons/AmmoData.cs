@@ -26,11 +26,12 @@ public class AmmoData : ScriptableObject
     /// <summary>武器の AP に加算するアーマー貫通補正値。</summary>
     public int AP;
 
-    [Header("使用回数")]
+    [Header("所持数")]
 
     /// <summary>
-    /// 使用可能回数。0 は弾数無制限を表す。
-    /// 制限がある弾薬（手榴弾、ミサイルなど）はここに回数を設定する。
+    /// 所持数（使用可能回数）。0 は無制限を表す。
+    /// 手榴弾・ミサイルのような単発武器は使い切りの回数として、
+    /// Kraken Bolt Round のような特殊弾薬は所持している個数としてこの値を使う。
     /// </summary>
     public int uses;
 

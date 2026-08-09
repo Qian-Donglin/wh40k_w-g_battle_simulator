@@ -47,7 +47,7 @@ public static class WeaponSaver
             traits         = w.traits.Select(TraitToDto).ToList()
         };
         if (w is MeleeWeaponData m)  dto.meleeRange = m.meleeRange;
-        if (w is RangedWeaponData r) { dto.range = r.range; dto.salvo = r.salvo; dto.magazine = r.magazine; dto.armo = r.armo; }
+        if (w is RangedWeaponData r) { dto.range = r.range; dto.salvo = r.salvo; dto.magazine = r.magazine; }
         return dto;
     }
 

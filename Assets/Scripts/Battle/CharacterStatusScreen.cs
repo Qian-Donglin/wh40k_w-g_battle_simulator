@@ -412,9 +412,7 @@ public class CharacterStatusScreen : MonoBehaviour
             if (i < ranged.Length)
             {
                 var rw = ranged[i];
-                int   reserve     = bc.GetReserveAmmo(rw);
-                string reserveStr = reserve < 0 ? "∞" : reserve.ToString();
-                MakeAnchoredText(slot, $"{rw.weaponName}\n{bc.GetCurrentAmmo(rw)} / {rw.magazine}（所持 {reserveStr}）",
+                MakeAnchoredText(slot, $"{rw.weaponName}\n{bc.GetCurrentAmmo(rw)} / {rw.magazine}",
                                  12, TextAnchor.MiddleCenter, Vector2.zero, Vector2.one);
             }
         }
