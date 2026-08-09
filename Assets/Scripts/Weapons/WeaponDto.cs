@@ -35,7 +35,10 @@ public class WeaponDto
     /// <summary>Ranged のみ使用。フルレート射撃時の弾薬消費数。</summary>
     public int salvo;
 
-    /// <summary>Ranged のみ使用。弾倉サイズ。</summary>
+    /// <summary>Ranged のみ使用。リロードするまでに攻撃できる回数。</summary>
+    public int magazine;
+
+    /// <summary>Ranged のみ使用。所持している弾薬数。-1 は無制限。</summary>
     public int armo;
 
     public List<TraitEntryDto> traits = new List<TraitEntryDto>();

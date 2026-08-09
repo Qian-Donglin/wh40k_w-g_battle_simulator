@@ -49,7 +49,8 @@
       "meleeRange": 0,
       "range": 8,
       "salvo": 1,
-      "armo": 8,
+      "magazine": 8,
+      "armo": -1,
       "traits": [
         { "trait": "Pistol", "rating": 0, "statusEffectName": "" }
       ]
@@ -63,7 +64,8 @@
       "meleeRange": 0,
       "range": 15,
       "salvo": 1,
-      "armo": 15,
+      "magazine": 15,
+      "armo": -1,
       "traits": []
     },
     {
@@ -75,7 +77,8 @@
       "meleeRange": 0,
       "range": 24,
       "salvo": 1,
-      "armo": 30,
+      "magazine": 30,
+      "armo": -1,
       "traits": []
     },
     {
@@ -87,7 +90,8 @@
       "meleeRange": 0,
       "range": 24,
       "salvo": 1,
-      "armo": 20,
+      "magazine": 20,
+      "armo": -1,
       "traits": []
     },
     {
@@ -99,7 +103,8 @@
       "meleeRange": 0,
       "range": 36,
       "salvo": 3,
-      "armo": 60,
+      "magazine": 60,
+      "armo": -1,
       "traits": []
     }
   ],

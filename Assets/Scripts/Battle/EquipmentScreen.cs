@@ -196,7 +196,7 @@ public class EquipmentScreen : MonoBehaviour
         MakeColText(row, "ダメージ",   TextAnchor.MiddleCenter, 1f, 0f);
         MakeColText(row, "AP",         TextAnchor.MiddleCenter, 1f, 0f);
         MakeColText(row, "特性",       TextAnchor.MiddleLeft,   1f, 0f);
-        MakeColText(row, "Salvo/Armo", TextAnchor.MiddleCenter, 1f, 0f);
+        MakeColText(row, "Salvo/Mag", TextAnchor.MiddleCenter, 1f, 0f);
     }
 
     private GameObject BuildScrollArea(GameObject canvas)
@@ -273,7 +273,7 @@ public class EquipmentScreen : MonoBehaviour
             GameObject row = BuildDataRow(w.weaponName,
                                           FormatDamage(w.baseDamage, w.extraDamageDice),
                                           FormatAP(w.AP),
-                                          GetTraitLabels(w.traits), $"{w.salvo}/{w.armo}",
+                                          GetTraitLabels(w.traits), $"{w.salvo}/{w.magazine}",
                                           () => _editDialog.OpenEdit(captured));
             sec.Rows.Add((row, w.weaponName.ToLower()));
         }

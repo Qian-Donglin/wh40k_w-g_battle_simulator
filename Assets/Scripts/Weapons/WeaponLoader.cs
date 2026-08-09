@@ -128,9 +128,10 @@ public static class WeaponLoader
             case "Ranged":
                 var ranged = ScriptableObject.CreateInstance<RangedWeaponData>();
                 ranged.weaponType = WeaponType.Ranged;
-                ranged.range = dto.range;
-                ranged.salvo = dto.salvo;
-                ranged.armo  = dto.armo;
+                ranged.range    = dto.range;
+                ranged.salvo    = dto.salvo;
+                ranged.magazine = dto.magazine;
+                ranged.armo     = dto.armo;
                 weapon = ranged;
                 break;
 
